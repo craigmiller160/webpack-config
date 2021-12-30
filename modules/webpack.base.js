@@ -13,7 +13,8 @@ module.exports = {
     output: {
         path: path.resolve(process.cwd(), 'build'),
         filename: 'assets/js/[name].[contenthash].js',
-        chunkFilename: 'assets/js/[name].[contenthash].js'
+        chunkFilename: 'assets/js/[name].[contenthash].js',
+        publicPath: process.env.WEBPACK_PUBLIC_PATH
     },
     plugins: [
         new CleanWebpackPlugin()

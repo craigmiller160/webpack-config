@@ -1,3 +1,7 @@
 output.publicPath
 
-MENTION ANALYZE env variable
+WEBPACK_ANALYZE=true
+    - Run bundle analyzer
+WEBPACK_PUBLIC_PATH=###
+    - Set the public path
+    - Defaults to /
