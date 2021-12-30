@@ -7,12 +7,14 @@ const cssExtract = require('./modules/webpack.cssExtract');
 const devServer = require('./modules/webpack.devServer');
 const sourceMap = require('./modules/webpack.sourcemap');
 const resources = require('./modules/webpack.resources');
+const javascript = require('./modules/webpack.javascript');
 
 const modules = [
     base,
     html,
     css,
-    resources
+    resources,
+    javascript
 ];
 
 if (process.env.ANALYZE === 'true') {
