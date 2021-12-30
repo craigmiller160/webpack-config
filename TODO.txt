@@ -13,3 +13,5 @@ WEBPACK_HTML_TEMPLATE_PATH=###
     - Defaults to internal template, which is good for most use cases
 
 NODE_ENV = development vs production
+
+DOCUMENT devServer.https and devServer.proxy and devServer.port
