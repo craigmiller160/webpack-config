@@ -1,7 +1,13 @@
-output.publicPath
+Need way to load envs from webpack.env file. Need to do this internally. Need to document it for customizations
 
 WEBPACK_ANALYZE=true
     - Run bundle analyzer
 WEBPACK_PUBLIC_PATH=###
     - Set the public path
     - Defaults to /
+WEBPACK_HTML_TITLE=###
+    - Sets the HTML title
+    - Defaults to "Webpack Application"
+WEBPACK_HTML_TEMPLATE_PATH=###
+    - Sets the HTML template path
+    - Defaults to internal template, which is good for most use cases
