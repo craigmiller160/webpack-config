@@ -6,11 +6,13 @@ const css = require('./modules/webpack.css');
 const cssExtract = require('./modules/webpack.cssExtract');
 const devServer = require('./modules/webpack.devServer');
 const sourceMap = require('./modules/webpack.sourcemap');
+const resources = require('./modules/webpack.resources');
 
 const modules = [
     base,
     html,
-    css
+    css,
+    resources
 ];
 
 if (process.env.ANALYZE === 'true') {
