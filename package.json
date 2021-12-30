@@ -12,5 +12,9 @@
   "files": [
     "modules/*",
     "webpack.config.js"
-  ]
+  ],
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "webpack": "^5.65.0"
+  }
 }
