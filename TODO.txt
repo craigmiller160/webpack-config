@@ -11,3 +11,5 @@ WEBPACK_HTML_TITLE=###
 WEBPACK_HTML_TEMPLATE_PATH=###
     - Sets the HTML template path
     - Defaults to internal template, which is good for most use cases
+
+NODE_ENV = development vs production
