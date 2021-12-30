@@ -1,1 +1,3 @@
 output.publicPath
+
+MENTION ANALYZE env variable
