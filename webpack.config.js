@@ -1,5 +1,5 @@
 require('./utils/readWebpackEnv');
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const base = require('./modules/webpack.base');
 const analyze = require('./modules/webpack.analyze');
 const html = require('./modules/webpack.html');
