@@ -8,6 +8,7 @@ const devServer = require('./modules/webpack.devServer');
 const sourceMap = require('./modules/webpack.sourcemap');
 const resources = require('./modules/webpack.resources');
 const javascript = require('./modules/webpack.javascript');
+const { isProduction, isDevelopment } = require('./utils/envCheck');
 
 const modules = [
     base,
@@ -21,11 +22,11 @@ if (process.env.ANALYZE === 'true') {
     modules.push(analyze);
 }
 
-if (process.env.NODE_ENV === 'production') {
+if (isProduction()) {
     modules.push(cssExtract);
 }
 
-if (process.env.NODE_ENV === 'development') {
+if (isDevelopment()) {
     modules.push(devServer);
     modules.push(sourceMap);
 }
