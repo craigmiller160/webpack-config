@@ -46,3 +46,7 @@ const config = require('@craigmiller160/webpack-config');
 
 module.exports = merge([config, otherConfig1, otherConfig2]);
 ```
+
+## How to Run
+
+The NPM commands `craig-webpack` (for running production build) and `craig-webpack-dev` (for running dev server) are provided by this library.
