@@ -8,6 +8,7 @@ const devServer = require('./modules/webpack.devServer');
 const sourceMap = require('./modules/webpack.sourcemap');
 const resources = require('./modules/webpack.resources');
 const javascript = require('./modules/webpack.javascript');
+const optimize = require('./modules/webpack.optimize');
 const { isProduction, isDevelopment } = require('./utils/envCheck');
 
 const modules = [
@@ -24,6 +25,7 @@ if (process.env.ANALYZE === 'true') {
 
 if (isProduction()) {
     modules.push(cssExtract);
+    modules.push(optimize);
 }
 
 if (isDevelopment()) {

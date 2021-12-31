@@ -1,6 +1,5 @@
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const { isProduction } = require('../utils/envCheck');
 
 module.exports = {
     performance: {
@@ -8,8 +7,8 @@ module.exports = {
         maxAssetSize: 1000000
     },
     optimization: {
-        usedExports: isProduction(),
-        minimize: isProduction(),
+        usedExports: true,
+        minimize: true,
         sideEffects: false,
         splitChunks: {
             chunks: 'all',
