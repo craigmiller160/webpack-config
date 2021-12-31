@@ -13,7 +13,8 @@
     "modules/*",
     "webpack.config.js",
     "utils/*",
-    ".yalc"
+    ".yalc",
+    "files/*"
   ],
   "dependencies": {
     "@craigmiller160/postcss-config": "^1.0.0-beta.1",
