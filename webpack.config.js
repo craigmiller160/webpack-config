@@ -9,7 +9,7 @@ const sourceMap = require('./modules/webpack.sourcemap');
 const resources = require('./modules/webpack.resources');
 const javascript = require('./modules/webpack.javascript');
 const optimize = require('./modules/webpack.optimize');
-const { isProduction, isDevelopment } = require('./utils/envCheck');
+const { isProduction, isDevelopment } = require('./utils/nodeEnvCheck');
 
 const modules = [
     base,

@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { postCssLoader } = require('@craigmiller160/postcss-config');
-const { isProduction } = require('../utils/envCheck');
+const { isProduction } = require('../utils/nodeEnvCheck');
 
 const loaders = (isCssModule) => ([
     isProduction() ? MiniCssExtractPlugin.loader : 'style-loader',
