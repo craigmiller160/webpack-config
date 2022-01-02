@@ -2,6 +2,8 @@
 
 const spawn = require('cross-spawn');
 
-spawn.sync('cross-env', ['NODE_ENV=production', 'webpack'], {
+const result = spawn.sync('cross-env', ['NODE_ENV=production', 'webpack'], {
     stdio: 'inherit'
 });
+
+process.exit(result.status);
