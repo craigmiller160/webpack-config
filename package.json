@@ -25,6 +25,7 @@
     "@craigmiller160/postcss-config": "^1.0.0-beta.1",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^10.2.0",
+    "cross-env": "^7.0.3",
     "cross-spawn": "^7.0.3",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.3.1",
