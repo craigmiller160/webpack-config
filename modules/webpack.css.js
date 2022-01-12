@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { postCssLoader } = require('@craigmiller160/postcss-config');
-const { isProduction } = require('../utils/nodeEnvCheck');
+const { isProduction, isDevelopment } = require('../utils/nodeEnvCheck');
 
 const loaders = (isCssModule) => ([
     isProduction() ? MiniCssExtractPlugin.loader : 'style-loader',
@@ -8,11 +8,19 @@ const loaders = (isCssModule) => ([
         loader: 'css-loader',
         options: {
             importLoaders: isProduction() ? 2 : 1,
-            modules: isCssModule
+            modules: isCssModule,
+            sourceMap: isDevelopment()
         }
     },
     isProduction() ? postCssLoader : null,
-    'resolve-url-loader'
+    {
+        loader: 'resolve-url-loader',
+        options: {
+            sourceMap: isDevelopment(),
+            // It spams warnings about missing sourceMaps and breaks builds. Doing this for now until permanent solution can be found
+            silent: true
+        }
+    }
 ].filter((loader) => loader));
 
 module.exports = {
