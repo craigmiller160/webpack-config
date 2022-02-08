@@ -9,7 +9,6 @@ module.exports = {
     optimization: {
         usedExports: true,
         minimize: true,
-        sideEffects: false,
         splitChunks: {
             chunks: 'all',
             maxSize: 1000000,
