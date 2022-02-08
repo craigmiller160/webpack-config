@@ -23,10 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@craigmiller160/postcss-config@^1.0.0-beta.1":
-  version "1.0.0-beta.1"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@craigmiller160/postcss-config/-/postcss-config-1.0.0-beta.1.tgz#be9e35a971d264b249fe5c643b58fda6c13f1173"
-  integrity sha512-JQEP2xziJB6V0/bRjLFRgXBdzrF1kE3NDtLNbRtvWc9sOgxyva5XWUruCIt5SbBaxaFbyFEsPdaUeEvLV10lzA==
+"@craigmiller160/postcss-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@craigmiller160/postcss-config/-/postcss-config-1.0.0.tgz#5b34d55eafe9b25495ae409a915b15e77d513af4"
+  integrity sha512-D4k12TevP4BnL63nZP1iBrug5Xa55bAmudPne6gWSMFvn3fFPRB2HcWGk4J7NDuH/LkWyAJ7yMMapKtcPj3p0A==
   dependencies:
     postcss "^8.4.5"
     postcss-flexbugs-fixes "^5.0.2"
