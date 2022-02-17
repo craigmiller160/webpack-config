@@ -8,7 +8,8 @@ module.exports = {
             filename: 'index.html',
             template: process.env.WEBPACK_HTML_TEMPLATE_PATH || path.join(__dirname, '..', 'files', 'index.template.html'),
             minify: true,
-            showErrors: true
+            showErrors: true,
+            excludeChunks: ['service-worker']
         })
     ]
 };
